@@ -26,8 +26,17 @@ dependencies {
     androidTestImplementation rootProject.ext.dependencies["test:runner"]
     androidTestImplementation rootProject.ext.dependencies["test.espresso"]
     implementation rootProject.ext.dependencies["support-annotations"]
+
     implementation rootProject.ext.dependencies["butterknife"]
     annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+
+    implementation rootProject.ext.dependencies["okhttp3"]
+    implementation rootProject.ext.dependencies["retrofit2"]
+    implementation rootProject.ext.dependencies["gson"]
+    implementation rootProject.ext.dependencies["converter-gson"]
+    implementation rootProject.ext.dependencies["adapter-rxjava2"]
+    implementation rootProject.ext.dependencies["rxandroid"]
+
     implementation rootProject.ext.dependencies["recyclerview-v7"]
     implementation project(':common')
 }

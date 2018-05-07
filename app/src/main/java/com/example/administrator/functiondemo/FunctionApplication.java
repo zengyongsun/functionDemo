@@ -1,9 +1,7 @@
 package com.example.administrator.functiondemo;
 
-import android.app.Application;
-
-import com.orhanobut.logger.AndroidLogAdapter;
-import com.orhanobut.logger.Logger;
+import com.example.administrator.functiondemo.http.RetrofitServiceManager;
+import com.example.common.CommonApplication;
 
 /**
  * <pre>
@@ -14,12 +12,11 @@ import com.orhanobut.logger.Logger;
  *     version: 1.0
  * </pre>
  */
-public class FunctionApplication extends Application {
+public class FunctionApplication extends CommonApplication {
 
     @Override
     public void onCreate() {
         super.onCreate();
-        Logger.addLogAdapter(new AndroidLogAdapter());
-
+        RetrofitServiceManager.getInstance();
     }
 }
