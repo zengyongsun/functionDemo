@@ -2,9 +2,6 @@ package com.example.administrator.functiondemo.api;
 
 import com.example.administrator.functiondemo.entity.ArticleListData;
 import com.example.administrator.functiondemo.entity.BannerData;
-import com.example.administrator.functiondemo.entity.HomeListData;
-
-import java.util.List;
 
 import io.reactivex.Observable;
 import retrofit2.http.GET;

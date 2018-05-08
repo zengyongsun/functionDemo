@@ -1,5 +1,7 @@
 package com.example.administrator.functiondemo.entity;
 
+import java.io.Serializable;
+
 /**
  * <pre>
  *    @author : Zeyo
@@ -9,9 +11,8 @@ package com.example.administrator.functiondemo.entity;
  *     version: 1.0
  * </pre>
  */
-public class BaseEntity<T> {
+public class BaseEntity implements Serializable {
 
-    public T data;
     public int errorCode;
     public String errorMsg;
 

@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.example.administrator.functiondemo.api.HomeLoader;
 import com.example.administrator.functiondemo.entity.ArticleListData;
+import com.example.administrator.functiondemo.entity.BannerData;
 import com.example.common.packaging.LoggerUtil;
 
 import butterknife.BindView;
@@ -31,7 +32,15 @@ public class MainActivity extends AppCompatActivity {
         homeLoader.getHomeArticleList().subscribe(new Consumer<ArticleListData>() {
             @Override
             public void accept(ArticleListData articleListData) throws Exception {
-                LoggerUtil.d(articleListData.pageCount);
+                LoggerUtil.d(articleListData.data.pageCount);
+                LoggerUtil.d(articleListData.data.datas.get(0).getChapterName());
+            }
+        });
+
+        homeLoader.getBannerData().subscribe(new Consumer<BannerData>() {
+            @Override
+            public void accept(BannerData bannerData) throws Exception {
+                LoggerUtil.d(bannerData.data.get(0).getDesc());
             }
         });
 

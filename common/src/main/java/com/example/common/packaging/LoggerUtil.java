@@ -1,5 +1,7 @@
 package com.example.common.packaging;
 
+import android.support.annotation.Nullable;
+
 import com.example.common.config.CommonConfig;
 import com.orhanobut.logger.Logger;
 
@@ -20,15 +22,15 @@ public class LoggerUtil {
         }
     }
 
-    public static void i(String message, Object object) {
+    public static void i(String message, Object... args) {
         if (CommonConfig.isDebug) {
-            Logger.i(message, object);
+            Logger.i(message, args);
         }
     }
 
-    public static void e(String message, Object object) {
+    public static void e(String message, Object... args) {
         if (CommonConfig.isDebug) {
-            Logger.e(message, object);
+            Logger.e(message, args);
         }
     }
 

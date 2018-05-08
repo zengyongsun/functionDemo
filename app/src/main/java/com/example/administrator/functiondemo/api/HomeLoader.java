@@ -1,10 +1,12 @@
 package com.example.administrator.functiondemo.api;
 
 import com.example.administrator.functiondemo.entity.ArticleListData;
+import com.example.administrator.functiondemo.entity.BannerData;
 import com.example.administrator.functiondemo.http.ObjectLoader;
 import com.example.administrator.functiondemo.http.RetrofitServiceManager;
 
 import io.reactivex.Observable;
+import io.reactivex.functions.Function;
 
 /**
  * <pre>
@@ -24,7 +26,21 @@ public class HomeLoader extends ObjectLoader {
     }
 
     public Observable<ArticleListData> getHomeArticleList() {
-        return observe(mHomeService.getHomeArticleList());
+        return observe(mHomeService.getHomeArticleList()).map(new Function<ArticleListData, ArticleListData>() {
+            @Override
+            public ArticleListData apply(ArticleListData articleListData) throws Exception {
+                return articleListData;
+            }
+        });
+    }
+
+    public Observable<BannerData> getBannerData(){
+        return observe(mHomeService.getHomeBanner()).map(new Function<BannerData, BannerData>() {
+            @Override
+            public BannerData apply(BannerData bannerData) throws Exception {
+                return bannerData;
+            }
+        });
     }
 
 }

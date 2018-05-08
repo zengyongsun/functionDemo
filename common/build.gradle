@@ -38,6 +38,7 @@ dependencies {
     implementation rootProject.ext.dependencies["adapter-rxjava2"]
 
     implementation rootProject.ext.dependencies["glide"]
+    implementation rootProject.ext.dependencies["glide-transformations"]
     annotationProcessor rootProject.ext.dependencies["glide:compiler"]
 
 }

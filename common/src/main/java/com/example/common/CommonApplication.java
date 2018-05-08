@@ -2,6 +2,7 @@ package com.example.common;
 
 import android.app.Application;
 
+import com.example.common.packaging.GlideLoader;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 
@@ -16,9 +17,18 @@ import com.orhanobut.logger.Logger;
  */
 public class CommonApplication extends Application {
 
+    private GlideLoader mGlideLoader;
+
     @Override
     public void onCreate() {
         super.onCreate();
         Logger.addLogAdapter(new AndroidLogAdapter());
+    }
+
+    /**
+     * 初始化Glide
+     */
+    private void initGlideLoader() {
+        mGlideLoader = GlideLoader.getInstance();
     }
 }

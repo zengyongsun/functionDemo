@@ -1,5 +1,7 @@
 package com.example.administrator.functiondemo.entity;
 
+import java.util.List;
+
 /**
  * <pre>
  *    @author : Zeyo
@@ -9,7 +11,9 @@ package com.example.administrator.functiondemo.entity;
  *     version: 1.0
  * </pre>
  */
-public class BannerData extends BaseEntity<BannerData> {
+public class BannerData extends BaseEntity {
+
+    public List<BannerBean> data;
 
     /**
      * desc : 最新项目上线啦~
@@ -22,76 +26,78 @@ public class BannerData extends BaseEntity<BannerData> {
      * url : http://www.wanandroid.com/pindex
      */
 
-    private String desc;
-    private int id;
-    private String imagePath;
-    private int isVisible;
-    private int order;
-    private String title;
-    private int type;
-    private String url;
+    public static class BannerBean {
+        private String desc;
+        private int id;
+        private String imagePath;
+        private int isVisible;
+        private int order;
+        private String title;
+        private int type;
+        private String url;
 
-    public String getDesc() {
-        return desc;
-    }
+        public String getDesc() {
+            return desc;
+        }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
-    }
+        public void setDesc(String desc) {
+            this.desc = desc;
+        }
 
-    public int getId() {
-        return id;
-    }
+        public int getId() {
+            return id;
+        }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+        public void setId(int id) {
+            this.id = id;
+        }
 
-    public String getImagePath() {
-        return imagePath;
-    }
+        public String getImagePath() {
+            return imagePath;
+        }
 
-    public void setImagePath(String imagePath) {
-        this.imagePath = imagePath;
-    }
+        public void setImagePath(String imagePath) {
+            this.imagePath = imagePath;
+        }
 
-    public int getIsVisible() {
-        return isVisible;
-    }
+        public int getIsVisible() {
+            return isVisible;
+        }
 
-    public void setIsVisible(int isVisible) {
-        this.isVisible = isVisible;
-    }
+        public void setIsVisible(int isVisible) {
+            this.isVisible = isVisible;
+        }
 
-    public int getOrder() {
-        return order;
-    }
+        public int getOrder() {
+            return order;
+        }
 
-    public void setOrder(int order) {
-        this.order = order;
-    }
+        public void setOrder(int order) {
+            this.order = order;
+        }
 
-    public String getTitle() {
-        return title;
-    }
+        public String getTitle() {
+            return title;
+        }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+        public void setTitle(String title) {
+            this.title = title;
+        }
 
-    public int getType() {
-        return type;
-    }
+        public int getType() {
+            return type;
+        }
 
-    public void setType(int type) {
-        this.type = type;
-    }
+        public void setType(int type) {
+            this.type = type;
+        }
 
-    public String getUrl() {
-        return url;
-    }
+        public String getUrl() {
+            return url;
+        }
 
-    public void setUrl(String url) {
-        this.url = url;
+        public void setUrl(String url) {
+            this.url = url;
+        }
     }
 }
