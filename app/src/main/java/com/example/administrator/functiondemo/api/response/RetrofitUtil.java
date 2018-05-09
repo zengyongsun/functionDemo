@@ -1,4 +1,6 @@
-package com.example.administrator.functiondemo.api;
+package com.example.administrator.functiondemo.api.response;
+
+import com.example.administrator.functiondemo.api.WanApi;
 
 import java.util.concurrent.TimeUnit;
 

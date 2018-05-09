@@ -1,4 +1,4 @@
-package com.example.administrator.functiondemo;
+package com.example.administrator.functiondemo.base;
 
 import com.example.administrator.functiondemo.http.RetrofitServiceManager;
 import com.example.common.CommonApplication;

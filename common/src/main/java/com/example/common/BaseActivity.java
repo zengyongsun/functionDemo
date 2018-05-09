@@ -3,7 +3,7 @@ package com.example.common;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.common.netstatus.NetChangeObserver;
-import com.example.common.netstatus.NetWorkUtil;
+import com.example.common.utils.NetWorkUtil;
 import com.example.common.packaging.LoggerUtil;
 
 /**

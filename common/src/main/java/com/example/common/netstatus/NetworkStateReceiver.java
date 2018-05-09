@@ -21,6 +21,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 
 import com.example.common.packaging.LoggerUtil;
+import com.example.common.utils.NetWorkUtil;
 
 import java.util.ArrayList;
 

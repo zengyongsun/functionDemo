@@ -15,6 +15,8 @@
  */
 package com.example.common.netstatus;
 
+import com.example.common.utils.NetWorkUtil;
+
 /**
  * @author 白猫
  * @version V1.0

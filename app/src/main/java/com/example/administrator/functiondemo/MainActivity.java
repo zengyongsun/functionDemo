@@ -4,9 +4,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 
-import com.example.administrator.functiondemo.api.HomeLoader;
-import com.example.administrator.functiondemo.entity.ArticleListData;
-import com.example.administrator.functiondemo.entity.BannerData;
+import com.example.administrator.functiondemo.api.response.HomeLoader;
+import com.example.administrator.functiondemo.api.entity.ArticleListData;
+import com.example.administrator.functiondemo.api.entity.BannerData;
 import com.example.common.packaging.LoggerUtil;
 
 import butterknife.BindView;

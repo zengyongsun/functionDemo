@@ -1,4 +1,4 @@
-package com.example.administrator.functiondemo.entity;
+package com.example.administrator.functiondemo.api.entity;
 
 import java.util.List;
 

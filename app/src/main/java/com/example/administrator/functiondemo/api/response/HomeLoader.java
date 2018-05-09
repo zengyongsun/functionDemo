@@ -1,7 +1,7 @@
-package com.example.administrator.functiondemo.api;
+package com.example.administrator.functiondemo.api.response;
 
-import com.example.administrator.functiondemo.entity.ArticleListData;
-import com.example.administrator.functiondemo.entity.BannerData;
+import com.example.administrator.functiondemo.api.entity.ArticleListData;
+import com.example.administrator.functiondemo.api.entity.BannerData;
 import com.example.administrator.functiondemo.http.ObjectLoader;
 import com.example.administrator.functiondemo.http.RetrofitServiceManager;
 
