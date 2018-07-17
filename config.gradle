@@ -44,6 +44,10 @@ ext {
             "test:runner"          : 'com.android.support.test:runner:1.0.2',
             "test.espresso"        : 'com.android.support.test.espresso:espresso-core:3.0.2',
 
-            "debug-db"             : 'com.amitshekhar.android:debug-db:1.0.3'
+            "debug-db"             : 'com.amitshekhar.android:debug-db:1.0.3',
+
+            "easypermissions"      : 'pub.devrel:easypermissions:1.2.0',
+
+            "mosby3:mvp"           : 'com.hannesdorfmann.mosby3:mvp:3.1.0' // Plain MVP
     ]
 }

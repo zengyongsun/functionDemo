@@ -1,21 +1,28 @@
 package com.example.administrator.functiondemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
+import android.widget.Button;
 
-import com.example.administrator.functiondemo.api.response.HomeLoader;
 import com.example.administrator.functiondemo.api.entity.ArticleListData;
 import com.example.administrator.functiondemo.api.entity.BannerData;
+import com.example.administrator.functiondemo.api.response.HomeLoader;
+import com.example.administrator.functiondemo.webview.WebViewActivity;
 import com.example.common.packaging.LoggerUtil;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import io.reactivex.functions.Consumer;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.recyclerView) RecyclerView recyclerView;
+    @BindView(R.id.recyclerView)
+    RecyclerView recyclerView;
+    @BindView(R.id.goWeb)
+    Button goWeb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,5 +51,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @OnClick(R.id.goWeb)
+    public void onViewClicked() {
+        startActivity(new Intent(this, WebViewActivity.class));
     }
 }

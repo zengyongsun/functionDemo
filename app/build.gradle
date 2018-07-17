@@ -42,5 +42,9 @@ dependencies {
     implementation rootProject.ext.dependencies["rxandroid"]
 
     implementation rootProject.ext.dependencies["recyclerview-v7"]
+
+    implementation rootProject.ext.dependencies["mosby3:mvp"]
+
+
     implementation project(':common')
 }
